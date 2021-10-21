@@ -86,10 +86,10 @@ header a {
 .heading {
   display: flex;
   justify-content: center;
-  height: 80px;
+  height: 150px;
 }
 .heading h2 {
-  font-size: 30px;
+  font-size: 45px;
   display: flex;
   align-items: center;
   font-family: fantasy;
@@ -101,22 +101,44 @@ div p {
   text-align: right;
 }
 .hero-work div {
-  /* height: 100px; */
   display: flex;
   border: 2px solid rgb(99, 20, 88);
   justify-content: center;
+  width: auto;
 }
 
 .flex {
-  
+  width: 100%;
+  display: flex;
   background-size: cover;
-  background-size: contain;
-
   height: 200px;
+  align-items: center;
+}
+.flex h3 {
+  font-size: 20px;
+  text-align: left;
 }
 .flex2 {
   height: 150px;
 }
 .flex2 div {
   width: 100%;
+}
+
+.hero-contact div {
+  border: orange solid 2px;
+}
+.hero-contact div ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.hero-contact div ul li {
+  font-size: 25px;
+}
+.hero-contact div ul li a:hover {
+  background-color: rgb(163, 139, 139);
+  color: #d36014;
+  text-shadow: 0 0 10px rgb(27, 1, 1);
 }
