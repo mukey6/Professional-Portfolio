@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(158, 153, 153);
+}
+
+header {
+  height: 100px;
+  background-color: #424242;
+  border: solid 1px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-image: url(./stripes.jpeg); */
+  flex-wrap: wrap;
+}
+
+header div {
+  background-image: url(./);
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-family: cursive;
+}
+
+header div h1 {
+  font-size: 48px;
+  text-shadow: 10px 0 5px rgb(148, 24, 24);
+}
+
+section {
+  height: 500px;
+  /* background-color: #008000; */
+  border: solid 2px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(223, 27, 109);
+}
+
+.navbar {
+  display: flex;
+  margin: 7px 0;
+  width: 50%;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+.navbar ul li {
+  padding: 10px 15px;
+  font-family: cursive;
+}
+
+.navbar ul li a {
+  font-size: 28px;
+}
+.navbar ul li a:hover {
+  background-color: rgb(163, 139, 139);
+  color: aqua;
+  text-shadow: 0 0 10px white;
+}
+
+.bg-img {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+}
+
+.hero div {
+  /* height: 100%; */
+  display: flex;
+  /* border: 2px solid rgb(202, 212, 111); */
+  justify-content: center;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+.heading h2 {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-family: fantasy;
+  color: #e72e0e;
+}
+div p {
+  font-size: 22px;
+  padding-left: 10px;
+  text-align: right;
+}
+.hero-work div {
+  /* height: 100px; */
+  display: flex;
+  border: 2px solid rgb(99, 20, 88);
+  justify-content: center;
+}
+
+.flex {
+  
+  background-size: cover;
+  background-size: contain;
+
+  height: 200px;
+}
+.flex2 {
+  height: 150px;
+}
+.flex2 div {
+  width: 100%;
+}
