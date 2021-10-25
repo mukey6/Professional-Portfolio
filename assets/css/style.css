@@ -3,41 +3,32 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: rgb(158, 153, 153);
 }
-
 header {
   height: 100px;
   background-color: #424242;
-  
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* background-image: url(./stripes.jpeg); */
   flex-wrap: wrap;
 }
-
 header div {
-  background-image: url(./);
   width: 40%;
   display: flex;
   align-items: center;
   padding: 10px;
   font-family: cursive;
 }
-
 header div h1 {
   font-size: 48px;
   text-shadow: 10px 0 5px rgb(148, 24, 24);
 }
 
 section {
-  height: 500px;
-  /* background-color: #008000; */
-  
+  border-top: dotted 2px black;
 }
 
 header a {
@@ -72,126 +63,113 @@ header a {
 }
 
 .bg-img {
-  display: flex;
   height: 300px;
+}
+
+.bg-img img {
+  padding: 0 0 22px 21px;
+  border-radius: 50px;
+}
+.hero,
+.hero-contact,
+.hero-work {
+  flex-wrap: wrap;
+}
+.hero-work {
+  height: 550px;
+}
+.hero div {
+  display: flex;
   justify-content: center;
 }
 
-.hero div {
-  /* height: 100%; */
-  display: flex;
-  
-  justify-content: center;
-}
-.heading {
-  display: flex;
-  justify-content: center;
-  height: 150px;
-}
-.heading h2 {
+h2 {
   font-size: 45px;
-  display: flex;
-  align-items: center;
   font-family: fantasy;
   color: #e72e0e;
+  text-align: center;
+  padding: 10px;
 }
+
+h3 {
+  font-size: 32px;
+}
+
 div p {
   font-size: 22px;
-  padding-left: 10px;
-  text-align: right;
+  padding-left: 60px;
+  padding-right: 70px;
+  text-align: center;
+  font-style: oblique;
 }
+
 .hero-work div {
   display: flex;
-  
-  justify-content: center;
-  width: auto;
 }
 
-.flex {
-  width: 100%;
-  display: flex;
-  background-size: cover;
+.run-buddy {
+  height: 180px;
+  /* align-items: center; */
+  padding: 0px 20% 0 20%;
+}
+
+.run-buddy img {
+  max-height: 100%;
+  /* max-width: 100%; */
+}
+
+.run-buddy-txt,
+.pass-gen-txt,
+.horiseon-txt {
+  flex-direction: column;
+}
+.run-buddy-txt ul,
+.pass-gen-txt ul,
+.horiseon-txt ul {
+  padding-left: 15%;
+}
+.other-work {
   height: 200px;
-  align-items: center;
+  padding: 17px 23px 0 0;
 }
 
-.flex h3 {
-  /* font-size: 34px; */
-  text-align: left;
-  width: 100%;
-  /* height: 100%; */
-  padding-top: 100px;
-  padding-left: 80px;
+.pass-gen {
+  padding: 1% 0 1% 10%;
 }
-
-.flex h3 a {
-  font-size: 40px;
-  text-decoration: none;
+.horiseon {
+  padding: 1% 0 1% 4%;
 }
-
-
-.flex2 {
+.pass-gen img,
+.horiseon img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+.hero-contact div {
   display: flex;
-  height: 150px;
+  justify-content: center;
 }
-.flex2 div {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-}
-.flex2-1, .flex2-2{
-  background-size: contain;
-  color: rgb(214, 20, 20);
-  width: 30%;
-}
-.flex2-1 p, .flex2-2 p{
-  text-align: left;
-  width: 100%;
-  padding-top: 80px;
-  padding-left: 20px;
+.contact-images {
+  width: 70px;
+  height: 70px;
 }
 
 
-.hero-contact div ul {
- width: 50%;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+div {
+  border: solid 2px red;
   
 }
+@media screen and (max-width: 980px) {
+  .horiseon-txt, .pass-gen-txt, .run-buddy-txt {
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 575px) {
 
-.hero-contact div ul li {
-  font-size: 25px;
-/* padding: 0 0 0 40px; */
 }
 
-.hero-contact div ul li a{
-  /* flex-direction: row; */
-  text-decoration: none;
+@media screen and (max-width: 768px){
+  .bg-img{
+    text-align: center;
+  }
 }
-
-.hero-contact div ul li a:hover {
-  background-color: rgb(163, 139, 139);
-  color: #d36014;
-  text-shadow: 0 0 10px rgb(27, 1, 1);
-}
-
-
-.hero-contact div{
-
-display: flex;
-width: 100%;
-}
-.hero-contact .heading {
-  width: 30%;
-}
-.contact-info{
-  display: flex;
-  justify-content: space-between;
-}
-
-
-/* style the images for the two boxes */
-/* how to make link not change colo after clicking  */
