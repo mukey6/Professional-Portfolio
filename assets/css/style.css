@@ -7,6 +7,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: rgb(158, 153, 153);
 }
+/* Styling header */
 header {
   height: 100px;
   background-color: #424242;
@@ -62,13 +63,10 @@ header a {
   text-shadow: 0 0 10px white;
 }
 
-.bg-img {
-  height: 300px;
-}
-
 .bg-img img {
   padding: 0 0 22px 21px;
   border-radius: 50px;
+  height: 350px;
 }
 .hero,
 .hero-contact,
@@ -76,7 +74,6 @@ header a {
   flex-wrap: wrap;
 }
 .hero-work {
-  height: 550px;
 }
 .hero div {
   display: flex;
@@ -93,6 +90,7 @@ h2 {
 
 h3 {
   font-size: 32px;
+  text-align: center;
 }
 
 div p {
@@ -108,28 +106,26 @@ div p {
 }
 
 .run-buddy {
-  height: 180px;
-  /* align-items: center; */
-  padding: 0px 20% 0 20%;
+  align-items: center;
 }
 
 .run-buddy img {
-  max-height: 100%;
-  /* max-width: 100%; */
+  height: 200px;
 }
 
 .run-buddy-txt,
 .pass-gen-txt,
 .horiseon-txt {
   flex-direction: column;
+  overflow: scroll;
 }
 .run-buddy-txt ul,
 .pass-gen-txt ul,
 .horiseon-txt ul {
-  padding-left: 15%;
+  padding-left: 20px;
 }
+
 .other-work {
-  height: 200px;
   padding: 17px 23px 0 0;
 }
 
@@ -141,9 +137,7 @@ div p {
 }
 .pass-gen img,
 .horiseon img {
-  max-width: 100%;
-  max-height: 100%;
-  position: relative;
+  height: 100px;
 }
 .hero-contact div {
   display: flex;
@@ -155,21 +149,58 @@ div p {
 }
 
 
-div {
-  border: solid 2px red;
-  
-}
+/* Media queries  */
+
 @media screen and (max-width: 980px) {
-  .horiseon-txt, .pass-gen-txt, .run-buddy-txt {
-    overflow: auto;
+  .horiseon-txt,
+  .pass-gen-txt,
+  .run-buddy-txt {
+    overflow: scroll;
+  }
+  .horiseon,
+  .pass-geny {
+    flex-wrap: wrap;
+  }
+  .bg-img div p {
+    width: 100%;
+    text-align: center;
+  }
+  header {
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 575px) {
-
+  .horiseon-txt,
+  .pass-gen-txt,
+  .run-buddy-txt {
+    overflow: scroll;
+  }
+  .horiseon,
+  .pass-gen {
+    flex-wrap: wrap;
+  }
+ 
 }
 
-@media screen and (max-width: 768px){
-  .bg-img{
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .bg-img div p {
     text-align: center;
+  }
+  .horiseon-txt,
+  .pass-gen-txt,
+  .run-buddy-txt {
+    overflow: scroll;
+  }
+  .horiseon,
+  .pass-gen,
+  .run-buddy {
+    flex-wrap: wrap;
+  }
+  header {
+    flex-wrap: inherit;
   }
 }
