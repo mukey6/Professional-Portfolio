@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muktar's Professional Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     
 </head>
@@ -11,40 +12,31 @@
     
 <header>
     <div>
-        <h1>
+        <h1 class="d-block p-3  text-center">
             Muktar Ahmed
         </h1>
     </div>
-    <nav class="navbar">
-        <ul>
-            <li>
-                <a href="#about-me">About me</a>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+        <ul class="nav  ">
+            <li class="nav-item">
+                <a class="nav-link" href="#about-me">About me</a>
             </li>
-            <li>
-                <a href="#work"> Work </a>
-
+            <li  class="nav-item">
+                <a class="nav-link" href="#work"> Work </a>
             </li>
-            <li>
-                <a href="#contact"> Contact me</a>
-
+            <li class="nav-item">
+                <a class="nav-link" href="#contact"> Contact me</a>
             </li>
-            
         </ul>
     </nav>
-   
-
 </header>
 
-
-
-<section class="hero" id="about-me"> 
-    <div> 
-        <h2> About me </h2>    
-    </div>
-    <div class="bg-img">
-
-        <img src="./assets/images/me.jpeg" alt="picture of me">
-        <div>
+<section class="container" id="about-me"> 
+    <div class="row mt-3">
+        <div class="col-3">
+            <img class="image" src="./assets/images/me.jpeg" alt="picture of me">
+        </div>
+        <div class="col-9">
             <p>
                 I am a Business gradaute from Concrodia University in St. Paul MN. I have always been into computers and curious of how 
                 websites are built. I took courses during my first two years of college and enjoyed it but at that time my focus was in a 
@@ -54,92 +46,79 @@
                 Most of my friends are software developers and I started doing free sessions online to see if I wouild like it. I am looking 
                 forward to learning a lot in this bootcamp to gain experience and excel in the field 
             </p>
-        </div>    
+        </div> 
+           
     </div>
   
 </section>
 
-<section class="hero-work" id="work">
-    
-        <h2> Work</h2>    
-    
-
-    <div class="run-buddy">
-        <div >
-            <a href="https://mukey6.github.io/run-buddy/"> <img src="./assets/images/run-buddy.jpeg" alt=""></a>
+<section class="container" id="work">
+    <div class="row mt-5 mb-3">
+         <div class="col-3">
+            <img class="image img-fluid" src="./assets/images/run-buddy.jpeg" alt="run-buddy background image">
         </div>
-       <div class="run-buddy-txt">
-            <h3> Run Buddy </h3>
-            <ul>
-                <li>
-                    Built website for runners to to sign up for training sessions 
-                </li>
-                <li>
-                    Multiple trainers included on the pass-gen
-                </li>
-                <li>
-                    Designed site to make easy to request information
-                </li>
-                <li>
+        <div class="col-3">   
+          <div class="run-buddy-txt">
+                 <a class="text-decoration-none" href="https://mukey6.github.io/run-buddy/">
+                     <h3> Run Buddy </h3>
+                </a>
+                    Built website for runners to to sign up for training sessions. 
+                    Multiple trainers included on the pass-gen.
+                    Designed site to make easy to request information.
                     Created readme.md
-                </li>
-            </ul>
-        </div>   
+             </div>   
+         </div>   
+         <div class="col-3">
+            <img class="image img-fluid" src="./assets/images/recipe-guide.png" alt="run-buddy background image">
+         </div>
+         <div class="col-3">
+            <a class="text-decoration-none" href="https://mollymontgomery.github.io/Group-11-Project/">
+                <h3>Recipe Guide</h3>
+            </a>
+             <p>
+                    Built website to search recipe with ingredient on hand. 
+                    Picture of searched ingredient will generated.
+                    Used multiple API's to fetch data.
+                    Display multiple recipes. 
+                </p>
+         </div>                
     </div>
-<!-- place holder for future projects to attach -->
-    <div class="other-work">
-        <div class="pass-gen">
-            <img src="./assets/images/password.jpeg" alt="">
-           <div class="pass-gen-txt">
-            <h3>Password Generator </h3>
-            <ul>
-                <li>
-                    Build password Generator using javescript 
-                </li>
-                <li>
-                    Password Generates randomly depending on the criteria selected
-                </li>
-                <li>
-                    created readme.md
-                </li>
-                <li>
-                    created readme.md
-                </li>
-            </ul>
+    <div class="row">
+        <div class="col-3">
+            <img class="image img-fluid" src="./assets/images/password.jpeg" alt="">
 
-            </div>
         </div>
-<!-- place holder for future projects to attach -->
-         <div class="horiseon">
-            <img src="./assets/images/horiseon.png" alt="">
-
-            <div class="horiseon-txt">
-            <h3> Horiseon </h3>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </li>
-            </ul>
-            </div>
+        <div class="col-3">
+            <a class="text-decoration-none" href="https://mukey6.github.io/password-generator-/">
+                <h3>Password Generator</h3>
+            </a>
+            <p>
+                Created random password generator. 
+                You can select criteria that will generate a password according to that.
+                It will have required input before displaying password
+            </p>
+        </div>
+        <div class="col-3">
+            <img class="image img-fluid" src="./assets/images/quizGame.png" alt="">
+        </div>
+        <div class="col-3">
+            <a class="text-decoration-none" href="https://mukey6.github.io/Quiz-Game/">
+                <h3>Timed Quiz </h3>
+            </a>
+            <p>
+                Created a quiz that is time. 
+                Questions are related to sport.
+                If question is answered incorrectly then time is deducted
+                You are able to save highscore to keep track of record
+            </p>
         </div>
 
     </div>
-
 </section>
 
-<section class="hero-contact" id="contact">
+<section class="mt-5" id="contact">
 
-    <h2> Contact me </h2>    
-    <div>
+    <div class="hero-contact ">
         <a href="tel:612-222-2868"><img src="./assets/images/phone.png" alt="Phone"
             class="contact-images"></a>
         <a href="https://github.com/mukey6" target="_blank"><img src="./assets/images/github.webp" alt="GitHub"
@@ -150,8 +129,6 @@
       </div>
 
 </section>
-
-
 
 </body>
 </html>
