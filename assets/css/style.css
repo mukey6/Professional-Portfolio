@@ -6,6 +6,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  
 }
 
 header {
@@ -33,4 +34,5 @@ h3:hover {
 .hero-contact img{
   width: 70px;
   height: 70px; 
+  margin-left: 50px;
 }
